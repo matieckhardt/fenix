@@ -1,0 +1,31 @@
+{
+  "name": "fenix",
+  "version": "1.0.0",
+  "description": "fenix website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "retojonatan.github.com"
+  },
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "author": "retojonatan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

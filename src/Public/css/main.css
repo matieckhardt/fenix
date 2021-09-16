@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p,
+a {
+  font-family: 'Lato', Helvetica, sans-serif !important;
+  color: #111;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#nav-fenix {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(bottom, rgb(255, 255, 255) 80%, transparent 100%);
+  background: -webkit-linear-gradient(bottom, rgb(255, 255, 255) 80%, transparent 100%);
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 80%, transparent 100%);
+  z-index: 99999;
+}
+
+#nav-fenix .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+#nav-fenix .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.3%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#nav-fenix .navbar-brand {
+  min-width: 200px;
+  width: 280px;
+  margin-top: -15px;
+  padding: 20px 25px 20px 25px;
+  border-radius: 0 0 15px 15px;
+}
+
+#nav-fenix.scrolled {
+  background: -moz-repeating-linear-gradient(#fff, #fff 74.9%, #EEE 75%, transparent 75.1%, transparent 101%) !important;
+  background: -webkit-repeating-linear-gradient(#fff, #fff 74.9%, #EEE 75%, transparent 75.1%, transparent 101%) !important;
+  background: repeating-linear-gradient(#fff, #fff 74.9%, #EEE 75%, transparent 75.1%, transparent 101%) !important;
+  transition: background-color 400ms linear;
+}
+
+#nav-fenix.scrolled .navbar-brand {
+  margin-top: 0;
+  max-width: 200px;
+  padding: 10px 20px 20px 20px;
+}
+
+#nav-fenix.scrolled .nav-rrss {
+  display: none;
+}
+
+#carrusel {
+  margin-top: -88px;
+  z-index: -1;
+}
+
+#carrusel .carru img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#carrusel .carru {
+  margin-top: -50px;
+  z-index: 0;
+}
+
+#carrusel .card-carrusel {
+  padding: 120px 60px 25px;
+  width: 350px;
+  position: absolute;
+  right: 15%;
+  top: 5%;
+  border-radius: 30px;
+}
+
+#carrusel .card-carrusel h1 {
+  letter-spacing: -2.5px;
+}
+
+/* .slick-next::before,
+.slick-prev::before {} */
+
+#carrusel .slick-dots {
+  bottom: 60px !important;
+}
+
+#carrusel .slick-dots li {
+  margin: 10px !important;
+}
+
+#carrusel .slick-dots li button:before {
+  font-size: 90px !important;
+  opacity: .5 !important;
+}
+
+#carrusel .slick-dots li.slick-active button:before {
+  color: white !important;
+  font-size: 90px !important;
+  opacity: 1 !important;
+}
+
+#productos .carru-prod {
+  margin-left: -50px;
+  margin-right: -50px;
+}
+
+#productos .carru-prod .slick-slide img {
+  margin: auto;
+}
+
+.row {
+  margin: 0;
+}
+
+section {
+  position: relative;
+  padding-right: 50px;
+  padding-left: 50px;
+  z-index: 9999;
+  background-color: #fff;
+  padding-top: 80px;
+  border-radius: 50px 50px 0 0;
+  margin-top: -70px;
+  padding-bottom: 110px;
+  box-shadow: 0 -7px 7px rgba(50, 50, 50, .2);
+}
+
+.sombra {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+}
+
+.sombra-2 {
+  -webkit-filter: drop-shadow(0 2px 10px rgba(0, 0, 0, .75));
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, .75));
+}
+
+.bg-farma {
+  background-color: #87BD32;
+}
+
+.btn-gris {
+  background-color: #bbb;
+  color: #fff !important;
+}
+
+.fa-round {
+  border: 3px solid white;
+  padding: 9px;
+  border-radius: 100%;
+}
+
+.btn-envios {
+  margin-top: 10px;
+  height: 68px;
+  font-size: 1.75rem !important;
+}
+
+.btn-envios .fa-whatsapp {
+  margin-top: -10px;
+  margin-left: 3px;
+  font-size: 50px !important;
+  vertical-align: middle;
+}
+
+.img-delivery {
+  width: 550px;
+}
+
+.label {
+  width: fit-content;
+  padding: 30px 30px 20px 30px;
+  border-radius: 0 0 30px 30px;
+  margin: -80px 40px 50px 40px;
+}
+
+.label-sm {
+  width: fit-content;
+  padding: 30px 20px 10px 20px;
+  text-align: center;
+}
+
+.label-2 {
+  width: fit-content;
+}
+
+.label-right {
+  float: right;
+}
+
+.card-productos {
+  max-height: 250px;
+  min-width: 100%;
+  border-radius: 30px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.card-productos img {
+  max-height: inherit;
+  object-fit: scale-down;
+}
+
+.btn-oferta {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+}
+
+.img-marca {
+  height: 120px;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.img-tapabocas {
+  height: 300px;
+  width: auto;
+  position: absolute;
+  right: -50px;
+}
+
+.border-covid {
+  border-top: 4px solid #000;
+}
+
+.img-covid {
+  height: 80px;
+  width: auto;
+  margin-bottom: 30px;
+}
+
+.img-covid2 {
+  height: 80px;
+  width: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.sucursal {
+  padding: 10px;
+  display: block;
+  filter: drop-shadow(1px 1px 1px green);
+}
+
+.sucursal .card-sucursal {
+  position: absolute;
+  bottom: 25px;
+  left: 40px;
+}
+
+.sucursal .horarios {
+  opacity: 0;
+  height: 0;
+  transform: scaleY(0);
+}
+
+.sucursal:hover .horarios {
+  display: inline-block !important;
+  opacity: 1;
+  overflow: hidden;
+  transition: transform 0.25s ease-out;
+  height: auto;
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+
+.sucursal:hover {
+  filter: opacity(.85) saturate(.85) brightness(85%) contrast(130%);
+  -webkit-filter: opacity(.85) saturate(.85) brightness(85%) contrast(130%);
+}
+
+.cartero {
+  position: absolute;
+  bottom: 0;
+  right: 25%;
+  left: 25%;
+  max-height: 110%;
+}
+
+.degradado {
+  background-color: transparent;
+  background: -moz-linear-gradient(bottom, rgb(255, 255, 255) 30%, transparent);
+  background: -webkit-linear-gradient(bottom, rgb(255, 255, 255) 30%, transparent);
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, transparent);
+  height: 50px;
+  margin-bottom: -30px;
+  z-index: 9;
+  position: relative;
+}
+
+.dataf {
+  width: 60px;
+  margin-top: -60px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width:1280px) {
+  html {
+    font-size: 85% !important;
+  }
+
+  #nav-fenix {
+    padding: 0 10px !important;
+  }
+
+  #nav-fenix .navbar-brand {
+    margin-right: 0;
+  }
+
+  #nav-fenix .nav-link {
+    font-size: .85rem;
+    padding-left: .35rem;
+    padding-right: .35rem;
+  }
+
+  #envios .btn-envios {
+    height: 63px;
+  }
+
+  .sucursal img {
+    filter: brightness(0.75);
+  }
+
+  #conocenos .offset-1 {
+    margin-left: 0;
+    margin-top: 20px;
+    padding-top: 25px;
+    border-top: 3px solid #000;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 80% !important;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .col {
+    padding: .2rem;
+  }
+
+  .p-3 {
+    padding: .5rem !important;
+  }
+
+  .p-4 {
+    padding: 1rem !important;
+  }
+
+  .p-5 {
+    padding: 2rem !important;
+  }
+
+  .m-3 {
+    margin: .5rem !important;
+  }
+
+  .m-4 {
+    margin: 1rem !important;
+  }
+
+  .m-5 {
+    margin: 2rem !important;
+  }
+
+  .img-marca {
+    height: 70px;
+  }
+
+  .card-productos {
+    border-radius: 20px;
+  }
+
+  .card-productos img {
+    padding: .75rem !important;
+  }
+
+  #productos .carru-prod {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  #envios .fa-whatsapp {
+    margin-bottom: -8px;
+    margin-left: 0;
+    font-size: 40px !important;
+  }
+
+  #envios .btn-envios {
+    height: 58px;
+    font-size: 1.5rem !important;
+  }
+
+  #covid .row .px-4 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .img-tapabocas {
+    height: 200px;
+    right: -20px;
+  }
+
+  .sucursal {
+    padding: 0;
+    margin: 0;
+  }
+
+  .sucursal .card-sucursal {
+    position: absolute;
+    bottom: 10px;
+    left: 18px;
+  }
+
+  .card-sucursal h1 {
+    font-size: 1.7rem;
+  }
+
+  .card-sucursal h3 {
+    font-size: 1rem;
+  }
+
+  #consultanos .col-12 {
+    text-align: center !important;
+  }
+
+  #contactanos .cartero {
+    display: none;
+  }
+
+  #footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #footer .label {
+    border-radius: 0 0 8px 8px;
+    margin: -80px 8px 0px 8px;
+  }
+
+  #footer .col-3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #footer .nav-link {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 70% !important;
+    overflow-x: hidden !important;
+  }
+
+  section,
+  #footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #nav-fenix .navbar-brand {
+    min-width: 100px;
+    max-width: 165px;
+    padding: 10px 15px 15px 15px;
+    margin-top: 0;
+  }
+
+  #nav-fenix.scrolled .navbar-brand {
+    width: 130px;
+    padding: 10px;
+  }
+
+  #nav-fenix.scrolled #nav-etiqueta {
+    padding-top: 45px !important;
+  }
+
+  #nav-etiqueta {
+    padding: 10px !important;
+  }
+
+  #carrusel .card-carrusel {
+    padding: 100px 50px 30px;
+    width: 300px;
+    right: 3%;
+  }
+
+  #productos .slick-arrow {
+    display: none !important;
+  }
+
+  #envios .btn-envios {
+    height: 50px;
+    font-size: 1.25rem !important;
+  }
+
+  #envios .label {
+    max-width: min-content;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0 0 25px 25px;
+    margin: -80px 0 10px 30px;
+    object-fit: min-content !important;
+  }
+
+  #envios .label-sm {
+    margin: -80px 25px 0 0;
+    padding: 10px;
+  }
+
+  #promociones .row,
+  #promociones .card {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .cartero {
+    display: none;
+  }
+
+  .img-tapabocas {
+    height: 160px;
+    right: -10px;
+  }
+
+  #tel-covid h1 {
+    line-height: 30px !important;
+  }
+
+  #contactanos .pl-5 {
+    padding-left: 0 !important;
+  }
+
+  .img-covid,
+  .img-covid2 {
+    height: 50px;
+  }
+
+  #footer .row .col-4 {
+    padding-right: 0;
+  }
+
+  #footer .col-8 .col-3 {
+    display: contents;
+  }
+
+  #footer .col-8 .col-5 {
+    display: block;
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #footer .px-5 .d-inline-block {
+    font-size: 10px !important;
+  }
+
+  #footer .px-5 .pr-5 {
+    display: inline-flex;
+  }
+}
