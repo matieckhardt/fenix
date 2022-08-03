@@ -24,6 +24,9 @@ a:hover {
   text-decoration: none;
 }
 
+#ofrecemos {
+  font-size: 1.5em;
+}
 #nav-fenix {
   background: rgb(255, 255, 255);
   background: -moz-linear-gradient(bottom, rgb(255, 255, 255) 80%, transparent 100%);
